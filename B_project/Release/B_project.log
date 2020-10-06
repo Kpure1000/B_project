@@ -1,0 +1,5 @@
+﻿  glad.c
+  main.cpp
+main.obj : error LNK2001: 无法解析的外部符号 _glfwInit
+main.obj : error LNK2001: 无法解析的外部符号 _glfwWindowHint
+C:\Users\Kpurek\Desktop\OpenGL\B_project\Release\B_project.exe : fatal error LNK1120: 2 个无法解析的外部命令
