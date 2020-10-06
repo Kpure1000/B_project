@@ -29,7 +29,13 @@
     <ClInclude Include="Vector3.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Vector3f.h">
+    <ClInclude Include="Vertex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Color.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Config.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

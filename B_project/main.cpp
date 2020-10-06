@@ -3,7 +3,8 @@
 #include <iostream>
 #include<string>
 #include"Shader.h"
-#include"Vector3f.h"
+#include"Vector3.h"
+#include"Vertex.h"
 using namespace std;
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
@@ -44,16 +45,20 @@ int main()
      0.0f,  0.5f, 0.0f
     };
 
-    Vector3f a(1.0f, 1.0f, 1.0f);
-    a *= 3.0;
+	bf::Vertex vertexs[] =
+	{
+		bf::Vector3f(-0.5f,-0.5f,0.0f),
+		bf::Vector3f(-0.5f,-0.5f,0.0f),
+        bf::Vector3f(-0.5f,-0.5f,0.0f)
+	};
 
     GLuint VBO;
     glGenBuffers(1, &VBO);
     glBindBuffer(GL_ARRAY_BUFFER, VBO);
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
 
-    Shader vertShader("Shaders/tri0.vert", "", "");
-    Shader fragShader("", "Shaders/tri0.frag", "");
+    bf::Shader vertShader("Shaders/tri0.vert", "", "");
+    bf::Shader fragShader("", "Shaders/tri0.frag", "");
 
     //‰÷»æ—≠ª∑
     while (!glfwWindowShouldClose(window))

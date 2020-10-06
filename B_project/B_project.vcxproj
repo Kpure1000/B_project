@@ -72,15 +72,15 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Users\Kpurek\Desktop\OpenGL\B_project\B_project\OpenGL\Include;$(IncludePath)</IncludePath>
+    <IncludePath>OpenGL\Include;$(IncludePath)</IncludePath>
     <ReferencePath>$(ReferencePath)</ReferencePath>
-    <LibraryPath>C:\Users\Kpurek\Desktop\OpenGL\B_project\B_project\OpenGL\Libs\x86;$(LibraryPath)</LibraryPath>
+    <LibraryPath>OpenGL\Libs\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>C:\Users\Kpurek\Desktop\OpenGL\B_project\glfw\include;$(IncludePath)</IncludePath>
+    <IncludePath>OpenGL/Include;$(IncludePath)</IncludePath>
     <ReferencePath>$(ReferencePath)</ReferencePath>
-    <LibraryPath>C:\Users\Kpurek\Desktop\OpenGL\B_project\glfw\lib;$(LibraryPath)</LibraryPath>
+    <LibraryPath>OpenGL/Libs/x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
@@ -155,9 +155,11 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Color.h" />
+    <ClInclude Include="Config.h" />
     <ClInclude Include="Shader.h" />
     <ClInclude Include="Vector3.h" />
-    <ClInclude Include="Vector3f.h" />
+    <ClInclude Include="Vertex.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
